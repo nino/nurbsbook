@@ -1,7 +1,7 @@
 #pragma once
 
-#include <span>
 #include <Eigen/StdVector>
+#include <span>
 
 namespace nurbsbook {
 
@@ -14,6 +14,5 @@ double eval_polynomial(std::span<double> coefficients, double x);
 double bernstein(int i, int n, double u);
 
 Eigen::Vector3d stretch(Eigen::Vector3d input);
-
 
 }; // namespace nurbsbook
